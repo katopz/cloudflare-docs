@@ -83,8 +83,8 @@ kv_namespaces = [
 
 ### Service bindings
 
-To use a [service binding](/workers/wrangler/configuration/#service-bindings) that targets a Worker in a specific environment, you need to include the environment name in the target worker name that you specify in the `service` field. This should be in the format `<worker-name>-<environment-name>`.
-In the example below, we have two Workers, both with a `staging` environment. `worker-b` has a service binding to `worker-a`. Note how the service binding in the `staging` environment points to `worker-a-staging`, whereas the top-level service binding points to `worker-a`.
+To use a [service binding](/workers/wrangler/configuration/#service-bindings) that targets a Worker in a specific environment, you need to append the environment name to the target Worker name in the `service` field. This should be in the format `<worker-name>-<environment-name>`.
+In the example below, we have two Workers, both with a `staging` environment. `worker-b` has a service binding to `worker-a`. Note how the `service` field in the `staging` environment points to `worker-a-staging`, whereas the top-level service binding points to `worker-a`.
 
 <WranglerConfig>
 

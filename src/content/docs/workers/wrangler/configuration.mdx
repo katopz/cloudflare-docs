@@ -868,6 +868,16 @@ To bind other Workers to your Worker, assign an array of the below object to the
 
   - The name of the Worker.
 
+  - To set target a Worker in a specific [environment](/workers/wrangler/environments), you need to append the environment name to the Worker name. This should be in the format `<worker-name>-<environment-name>`. For example, to bind to a Worker called `worker-name` in its `staging` environment, `service` should be set to `worker-name-staging`.
+
+<WranglerConfig>
+
+```toml
+vars = { FOO = "<top-level-var>" }
+[env.staging.vars]
+FOO = "<staging-var>"
+```
+
 - `entrypoint` <Type text="string" /> <MetaInfo text="optional" />
 
   - The name of the [entrypoint](/workers/runtime-apis/bindings/service-bindings/rpc/#named-entrypoints) to bind to. If you do not specify an entrypoint, the default export of the Worker will be used.

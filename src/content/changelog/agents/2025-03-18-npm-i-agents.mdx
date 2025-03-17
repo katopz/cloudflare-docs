@@ -91,8 +91,8 @@ const fetchUserHistory = async () => {
 The [`agents-starter`](https://github.com/cloudflare/agents-starter) project — a real-time, chat-based example application with tool-calling & human-in-the-loop built using the Agents SDK — has seen the following updates:
 
 - TODO
-- Upgraded to use the latest [wrangler v4](/changelog/2025-03-13-wrangler-v4/) release.
-- [Workers AI](/workers-ai/) is now the default AI provider in the [`agents-starter`](https://github.com/cloudflare/agents-starter) project: this uses the new [structured outputs](/changelog/2025-02-25-json-mode/) (or "JSON mode") support now in Workers AI and the [`workers-ai-provider`](https://sdk.vercel.ai/providers/community-providers/cloudflare-workers-ai#generateobject).
+- Upgraded to use the latest [wrangler v4](/changelog/workers/2025-03-13-wrangler-v4/) release.
+- [Workers AI](/workers-ai/) is now the default AI provider in the [`agents-starter`](https://github.com/cloudflare/agents-starter) project: this uses the new [structured outputs](/changelog/workers-ai/2025-02-25-json-mode/) (or "JSON mode") support now in Workers AI and the [`workers-ai-provider`](https://sdk.vercel.ai/providers/community-providers/cloudflare-workers-ai#generateobject).
 - Changed the internal `zod` schema to be compatible with the limitations of Google's Gemini models, allowing you to use Gemini models with the starter.
 
 If you're new to Agents, you can install and run the `agents-starter` project in two commands:
@@ -110,7 +110,7 @@ We've heard your feedback on the Agents SDK documentation, and we're shipping mo
 
 - Expanded [API reference documentation](/agents/api-reference/), covering the methods and properties exposed by the Agents SDK, as well as more usage examples.
 - More [Client API](/agents/api-reference/agents-api/#client-api) documentation that documents `useAgent`, `useAgentChat` and the new `@callable` RPC decorator exposed by the SDK.
-- New documentation on how to [call agents](/agents/api-refererence/calling-agents/) and (optionally) authenticate clients before they connect to your Agents.
+- New documentation on how to [call agents](/agents/api-reference/calling-agents/) and (optionally) authenticate clients before they connect to your Agents.
 
 Note that the Agents SDK is continually growing: the type definitions included in the SDK will always include the latest APIs exposed by the `agents` package.
 
